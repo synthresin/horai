@@ -37,7 +37,7 @@ class Admin::HatsController < Admin::ApplicationController
   # PATCH/PUT /admin/hats/1.json
   def update
     if @hat.update(hat_params)
-      redirect_to @hat, notice: '모자가 수정되었어요.'
+      redirect_to admin_hats_path, notice: '모자가 수정되었어요.'
     else
       render :edit
     end
