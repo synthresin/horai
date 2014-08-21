@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Horai</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) + " - HORAI, HORAI" : "HORAI, HORAI" %></title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<div class="header">
+					<h1><%= link_to 'HORAI, HORAI', root_path %></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%= yield %>
 </body>
 </html>
