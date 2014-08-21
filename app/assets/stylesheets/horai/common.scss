@@ -1,4 +1,24 @@
 .header {
 	font-family: 'Droid Serif', serif; text-align: center;
 	a { color: #222;}
+	.logo {
+		width:319px;
+	}
+	margin-bottom:90px;
+}
+
+.hat-list-item {
+	text-align: center;
+	a {color:#222;}
+}
+
+.hat-detail {
+	h2 { text-align: center; }	
+
+}
+
+.footer {
+	margin-top:150px;
+	text-align: center;
+	font-family: 'Droid Serif', serif; text-align: center;
 }

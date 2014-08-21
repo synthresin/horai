@@ -26,20 +26,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <% if user_signed_in? %>
         <ul class="nav navbar-nav">
-          <li><%= link_to '인트로', edit_admin_intro_path %></li>
-          <li><%= link_to '회사소개', edit_admin_about_path %></li>
-          <li><%= link_to '빌보드', admin_billboards_path %></li>
-          <li><%= link_to '뉴스', admin_posts_path %></li>
-          <li><%= link_to '아티스트', admin_artists_path %></li>
-          <li><%= link_to '스케쥴', admin_schedules_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SNS <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to 'SNS 계정 관리', admin_sns_sources_path %></li>
-              <li><%= link_to 'SNS 게시물 관리', admin_sns_posts_path %></li>
-            </ul>
-          </li>
-          <li><%= link_to '오디션', admin_auditions_path %></li>
+          <li><%= link_to '모자', admin_hats_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
         <li><%= link_to '로그아웃', destroy_user_session_path, :method => 'delete' %></li>

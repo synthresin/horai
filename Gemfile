@@ -16,7 +16,8 @@ gem 'therubyracer',  platforms: :ruby
 
 gem 'devise', '>= 3.3.0'
 gem 'bootstrap-sass'
-
+gem 'carrierwave'
+gem 'rmagick', :require => 'RMagick'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

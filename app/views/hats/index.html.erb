@@ -1,15 +1,14 @@
 <div class="container">
 	<div class="row">
-		<div class="col-xs-6 col-sm-3">
-			<div class="hat-list-item">
-				
+		<% @hats.each do |hat| %>
+			<div class="col-xs-6 col-sm-3">
+				<div class="hat-list-item">
+					<%= link_to hat_path(hat) do %>
+						<%= image_tag hat.photo.url(:thumb), class: 'img-responsive' %>
+					<% end %>
+					<h4><%= link_to hat.name, hat_path(hat)%></h4>
+				</div>
 			</div>
-		</div>
-		<div class="col-xs-6 col-sm-3">
-			테스트
-		</div>
-		<div class="col-xs-6 col-sm-3">
-			테스트
-		</div>
+		<% end %>
 	</div>
 </div>

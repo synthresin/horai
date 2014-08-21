@@ -11,4 +11,7 @@
  * file per style scope.
  *
  *= require_self
+ *= require bootstrap
  */
+
+ul.alert { list-style-type: none;}

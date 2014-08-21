@@ -1,0 +1,8 @@
+<% if model.errors.messages.length > 0 %>
+  <ul class="alert alert-warning">
+      <button class="close" data-dismiss="alert">x</button>
+    <% model.errors.each do |key, value| %>
+      <li><%= value %></li>
+     <% end %>
+  </ul>
+<% end %>
