@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: horai_production
-  username: horai
+  username: root
   password: <%= ENV['HORAI_DATABASE_PASSWORD'] %>
